@@ -1,0 +1,41 @@
+[
+  {
+    "testCaseId": "TC001",
+    "description": "Valid login",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedResult": "SUCCESS"
+  },
+  {
+    "testCaseId": "TC002",
+    "description": "Invalid password",
+    "username": "Admin",
+    "password": "wrongpass",
+    "expectedResult": "FAILURE",
+    "expectedMessage": "Invalid credentials"
+  },
+  {
+    "testCaseId": "TC003",
+    "description": "Blank username",
+    "username": "",
+    "password": "admin123",
+    "expectedResult": "FAILURE",
+    "expectedMessage": "Username Required"
+  },
+  {
+    "testCaseId": "TC004",
+    "description": "Blank password",
+    "username": "Admin",
+    "password": "",
+    "expectedResult": "FAILURE",
+    "expectedMessage": "Password Required"
+  },
+  {
+    "testCaseId": "TC005",
+    "description": "Blank username and password",
+    "username": "",
+    "password": "",
+    "expectedResult": "FAILURE",
+    "expectedMessage": "Username Required | Password Required"
+  }
+]

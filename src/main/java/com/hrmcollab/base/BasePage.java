@@ -11,13 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static com.hrmcollab.driver.DriverFactory.driver;
-
 public class BasePage {
 
     public void setUp()
     {
-        DriverFactory.getDriver();
+        WebDriver driver = DriverFactory.getDriver();
         driver.get(ConfigReader.getProperty("url"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("orangehrm-login-logo")));
