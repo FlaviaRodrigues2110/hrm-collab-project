@@ -1,7 +1,5 @@
 package com.hrmcollab.driver;
 
-
-import com.hrmcollab.utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
